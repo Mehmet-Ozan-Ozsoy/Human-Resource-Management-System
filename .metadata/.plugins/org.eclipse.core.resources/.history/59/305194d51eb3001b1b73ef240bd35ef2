@@ -1,0 +1,14 @@
+package kodlamaio.hrms.entities.concretes;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Data								//Bütün getter-setter ve constructor bloklarını oluşturdu.
+@Entity								//(javax.persistence'den import ederek JPA altyapısı üzerinden bunun base'de bir Entity olduğu tanımlandı.
+public class Job {
+
+	private int id;
+	private String title;
+	private String description;
+}

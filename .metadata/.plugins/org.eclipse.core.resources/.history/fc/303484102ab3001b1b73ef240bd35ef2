@@ -1,0 +1,10 @@
+package kodlamaio.hrms.api.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController					//Bu şekilde bir kontrolör olduğunu tanımladık.
+@RequestMapping("/api/jobs")	//Bu şekilde, bir son kullanıcı bizden bir job verisine ulaşmak istediğinde, bu arayüz katmanındaki bu anotasyonla bize verinin nereden çekileceğine karar verecek.
+public class JobsController {	//Job(s)Controller, şeklindeki çoğul yazım (jobs) bir api controller yazım kuralıdır.
+
+}

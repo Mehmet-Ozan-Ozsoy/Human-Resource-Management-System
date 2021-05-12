@@ -1,0 +1,10 @@
+package kodlamaio.hrms.dataAccess.abstracts;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import kodlamaio.hrms.entities.concretes.Job;
+
+public interface ProductDao extends JpaRepository<Job, Integer>{	//JpaRepository, built-in bir interface. Interface interface'i EXTEND eder (aynı türler arası). Parametre olarak, hangi türün interace'i olduğunu ve o nesnenin primary key'ini belirtmemiz gerekiyor. Yoksa hata alırsın
+
+	
+}

@@ -1,0 +1,19 @@
+package kodlamaio.hrms.entities.concretes;
+
+public class Job {
+
+	private int id;
+	private String title;
+	private String description;
+}
+
+	public Job() {
+		
+	}
+	
+	public Job(int id, String title, String description) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.description = description;
+	}

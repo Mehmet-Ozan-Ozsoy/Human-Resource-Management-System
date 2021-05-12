@@ -1,0 +1,17 @@
+package kodlamaio.hrms.api.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController					//Bu şekilde bir kontrolör olduğunu tanımladık.
+@RequestMapping("/api/jobs")	//Bu şekilde, proje sitemizdeki (bu örnekte; kodlama.io) bir arayüz linkinden, bir son kullanıcı bir job verisine ulaşmak talebinde bulunduğunda, bu @RequestMapping bize verinin "kodlama.io/api/jobs" üzerinden çekileceğine karar verecek.
+public class JobsController {	//Job(s)Controller, şeklindeki çoğul yazım (jobs) bir api controller yazım kuralıdır.
+
+	@GetMapping("/getall")
+	public List<Job> getAll(){
+	}
+	
+}

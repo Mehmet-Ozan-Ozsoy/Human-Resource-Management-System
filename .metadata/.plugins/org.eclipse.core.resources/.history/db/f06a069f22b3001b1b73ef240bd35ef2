@@ -1,0 +1,18 @@
+package kodlamaio.hrms.business.concretes;
+
+import java.util.List;
+
+import kodlamaio.hrms.business.abstracts.ProductService;
+import kodlamaio.hrms.entities.concretes.Job;
+
+public class ProductManager implements ProductService {
+
+	
+	
+	@Override
+	public List<Job> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

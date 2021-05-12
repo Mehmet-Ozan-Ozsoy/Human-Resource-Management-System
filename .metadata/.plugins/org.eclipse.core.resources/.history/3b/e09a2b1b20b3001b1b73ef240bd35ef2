@@ -1,0 +1,26 @@
+package kodlamaio.hrms.entities.concretes;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data								//Bütün getter-setter ve constructor bloklarını oluşturdu.
+@Entity								//(javax.persistence'den (her zaman her annotation için buradan) import ederek JPA altyapısı üzerinden bunun base'de bir Entity olduğu tanımlandı.
+@Table(name="jobs")					//Veritabanımızda hangi tablonun içinde bulunduğunu belirttik.
+public class Job {
+	
+	@Id
+	@GeneratedValue	
+	@Column(name = "id")			//Tablonun hangi sütununa karşılık geldiğini belirttik.
+	private int id;
+	
+	@Column(name = "title")
+	private String title;
+	
+	@Column(name = "description")
+	private String description;
+}
